@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   Okta.plist
+   LoginDemo
+
+   Created by Tommy on 2021/1/21.
+   Copyright (c) 2021 ___ORGANIZATIONNAME___. All rights reserved.
+-->
+<plist version="1.0">
+    <dict>
+        <key>issuer</key>
+        <string>https://${yourOktaDomain}/oauth2/default</string>
+        <key>clientId</key>
+        <string>{clientId}</string>
+        <key>redirectUri</key>
+        <string>{redirectUri}</string>
+        <key>logoutRedirectUri</key>
+        <string>{logoutRedirectUri}</string>
+        <key>scopes</key>
+        <string>openid profile offline_access</string>
+    </dict>
+</plist>

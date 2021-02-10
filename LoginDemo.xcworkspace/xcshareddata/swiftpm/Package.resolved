@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire",
+        "state": {
+          "branch": null,
+          "revision": "eaf6e622dd41b07b251d8f01752eab31bc811493",
+          "version": "5.4.1"
+        }
+      },
+      {
+        "package": "Facebook",
+        "repositoryURL": "https://github.com/facebook/facebook-ios-sdk.git",
+        "state": {
+          "branch": null,
+          "revision": "fa5fab33bb440eed75122459965b82c7b944d9d8",
+          "version": "8.2.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -3,29 +3,67 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		04000D8F25B457CA0004AD0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04000D8E25B457CA0004AD0C /* AppDelegate.swift */; };
 		04000D9125B457CA0004AD0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04000D9025B457CA0004AD0C /* SceneDelegate.swift */; };
-		04000D9325B457CA0004AD0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04000D9225B457CA0004AD0C /* ViewController.swift */; };
 		04000D9625B457CA0004AD0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04000D9425B457CA0004AD0C /* Main.storyboard */; };
 		04000D9925B457CA0004AD0C /* LoginDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04000D9725B457CA0004AD0C /* LoginDemo.xcdatamodeld */; };
 		04000D9B25B457CF0004AD0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04000D9A25B457CF0004AD0C /* Assets.xcassets */; };
 		04000D9E25B457CF0004AD0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04000D9C25B457CF0004AD0C /* LaunchScreen.storyboard */; };
+		04000DA825B588CE0004AD0C /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 04000DA725B588CE0004AD0C /* FacebookLogin */; };
+		04000DBA25B95E6B0004AD0C /* Okta.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04000DB925B95E6B0004AD0C /* Okta.plist */; };
+		04BEBB3025C315A40079B3E0 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEBB2F25C315A40079B3E0 /* UIViewController+Extensions.swift */; };
+		04BEBB3825C7140D0079B3E0 /* AcountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEBB3725C7140C0079B3E0 /* AcountController.swift */; };
+		04BEBB3F25C7C7900079B3E0 /* ResponseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEBB3E25C7C7900079B3E0 /* ResponseModels.swift */; };
+		04BEBB4225C7C8630079B3E0 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEBB4125C7C8630079B3E0 /* Enum.swift */; };
+		04BEBB4F25C7CC650079B3E0 /* ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEBB4E25C7CC650079B3E0 /* ImageController.swift */; };
+		04BEBB5A25C7E52D0079B3E0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 04BEBB5925C7E52D0079B3E0 /* Alamofire */; };
+		04BEBB5D25C801D70079B3E0 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEBB5C25C801D70079B3E0 /* Account.swift */; };
+		04BEBB6825CD40B90079B3E0 /* EditProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEBB6725CD40B80079B3E0 /* EditProfileTableViewController.swift */; };
+		04BEBB6B25CE39E90079B3E0 /* EditProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BEBB6A25CE39E80079B3E0 /* EditProfileTableViewCell.swift */; };
+		04C7662725BB336B00FC56EC /* EmailSignInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04C7662625BB336B00FC56EC /* EmailSignInView.xib */; };
+		04C7662B25BB338800FC56EC /* EmailSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7662A25BB338800FC56EC /* EmailSignInView.swift */; };
+		04C7662E25BC86CB00FC56EC /* EmailSignInSuperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7662D25BC86CA00FC56EC /* EmailSignInSuperView.swift */; };
+		04C7663925BEC21900FC56EC /* EmailSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7663825BEC21900FC56EC /* EmailSignUpViewController.swift */; };
+		04C7664125C167BA00FC56EC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7664025C167B900FC56EC /* LoginViewController.swift */; };
+		04C7664525C16FA600FC56EC /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7664425C16FA600FC56EC /* ProfileTableViewController.swift */; };
+		04C7664C25C1B1FA00FC56EC /* userHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7664B25C1B1FA00FC56EC /* userHeaderTableViewCell.swift */; };
+		04C7664F25C1B20A00FC56EC /* userInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7664E25C1B20A00FC56EC /* userInfoTableViewCell.swift */; };
+		3812D880BBC0B5F86E032373 /* Pods_LoginDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61368AB04FF985C219BF88CD /* Pods_LoginDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04000D8B25B457CA0004AD0C /* LoginDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04000D8E25B457CA0004AD0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04000D9025B457CA0004AD0C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04000D9225B457CA0004AD0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04000D9525B457CA0004AD0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04000D9825B457CA0004AD0C /* LoginDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LoginDemo.xcdatamodel; sourceTree = "<group>"; };
 		04000D9A25B457CF0004AD0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04000D9D25B457CF0004AD0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04000D9F25B457CF0004AD0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04000DB925B95E6B0004AD0C /* Okta.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Okta.plist; sourceTree = "<group>"; };
+		04BEBB2F25C315A40079B3E0 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		04BEBB3725C7140C0079B3E0 /* AcountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcountController.swift; sourceTree = "<group>"; };
+		04BEBB3E25C7C7900079B3E0 /* ResponseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModels.swift; sourceTree = "<group>"; };
+		04BEBB4125C7C8630079B3E0 /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		04BEBB4E25C7CC650079B3E0 /* ImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageController.swift; sourceTree = "<group>"; };
+		04BEBB5C25C801D70079B3E0 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		04BEBB6725CD40B80079B3E0 /* EditProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewController.swift; sourceTree = "<group>"; };
+		04BEBB6A25CE39E80079B3E0 /* EditProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewCell.swift; sourceTree = "<group>"; };
+		04C7662625BB336B00FC56EC /* EmailSignInView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailSignInView.xib; sourceTree = "<group>"; };
+		04C7662A25BB338800FC56EC /* EmailSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignInView.swift; sourceTree = "<group>"; };
+		04C7662D25BC86CA00FC56EC /* EmailSignInSuperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignInSuperView.swift; sourceTree = "<group>"; };
+		04C7663825BEC21900FC56EC /* EmailSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignUpViewController.swift; sourceTree = "<group>"; };
+		04C7664025C167B900FC56EC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		04C7664425C16FA600FC56EC /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		04C7664B25C1B1FA00FC56EC /* userHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		04C7664E25C1B20A00FC56EC /* userInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userInfoTableViewCell.swift; sourceTree = "<group>"; };
+		58754C0BE827C7270592D24F /* Pods-LoginDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginDemo.debug.xcconfig"; path = "Target Support Files/Pods-LoginDemo/Pods-LoginDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		61368AB04FF985C219BF88CD /* Pods_LoginDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6ABAF1ECD63396A944D8C97 /* Pods-LoginDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginDemo.release.xcconfig"; path = "Target Support Files/Pods-LoginDemo/Pods-LoginDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +71,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04BEBB5A25C7E52D0079B3E0 /* Alamofire in Frameworks */,
+				04000DA825B588CE0004AD0C /* FacebookLogin in Frameworks */,
+				3812D880BBC0B5F86E032373 /* Pods_LoginDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +83,14 @@
 		04000D8225B457CA0004AD0C = {
 			isa = PBXGroup;
 			children = (
+				04BEBB6125CAB4990079B3E0 /* Controller */,
+				04BEBB2E25C315350079B3E0 /* Extension */,
+				04C7665125C1B37400FC56EC /* Model */,
+				04C7662325BB31F900FC56EC /* View */,
 				04000D8D25B457CA0004AD0C /* LoginDemo */,
 				04000D8C25B457CA0004AD0C /* Products */,
+				8B16971CB4594DCB30C1ED04 /* Pods */,
+				898B25F27C4495D609F84747 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,14 +107,75 @@
 			children = (
 				04000D8E25B457CA0004AD0C /* AppDelegate.swift */,
 				04000D9025B457CA0004AD0C /* SceneDelegate.swift */,
-				04000D9225B457CA0004AD0C /* ViewController.swift */,
-				04000D9425B457CA0004AD0C /* Main.storyboard */,
 				04000D9A25B457CF0004AD0C /* Assets.xcassets */,
 				04000D9C25B457CF0004AD0C /* LaunchScreen.storyboard */,
 				04000D9F25B457CF0004AD0C /* Info.plist */,
 				04000D9725B457CA0004AD0C /* LoginDemo.xcdatamodeld */,
+				04000DB925B95E6B0004AD0C /* Okta.plist */,
 			);
 			path = LoginDemo;
+			sourceTree = "<group>";
+		};
+		04BEBB2E25C315350079B3E0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				04BEBB2F25C315A40079B3E0 /* UIViewController+Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		04BEBB6125CAB4990079B3E0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04C7663825BEC21900FC56EC /* EmailSignUpViewController.swift */,
+				04BEBB3725C7140C0079B3E0 /* AcountController.swift */,
+				04BEBB4E25C7CC650079B3E0 /* ImageController.swift */,
+				04C7664025C167B900FC56EC /* LoginViewController.swift */,
+				04C7664425C16FA600FC56EC /* ProfileTableViewController.swift */,
+				04BEBB6725CD40B80079B3E0 /* EditProfileTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04C7662325BB31F900FC56EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04000D9425B457CA0004AD0C /* Main.storyboard */,
+				04C7662625BB336B00FC56EC /* EmailSignInView.xib */,
+				04C7662A25BB338800FC56EC /* EmailSignInView.swift */,
+				04C7662D25BC86CA00FC56EC /* EmailSignInSuperView.swift */,
+				04C7664B25C1B1FA00FC56EC /* userHeaderTableViewCell.swift */,
+				04C7664E25C1B20A00FC56EC /* userInfoTableViewCell.swift */,
+				04BEBB6A25CE39E80079B3E0 /* EditProfileTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04C7665125C1B37400FC56EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04BEBB3E25C7C7900079B3E0 /* ResponseModels.swift */,
+				04BEBB4125C7C8630079B3E0 /* Enum.swift */,
+				04BEBB5C25C801D70079B3E0 /* Account.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		898B25F27C4495D609F84747 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61368AB04FF985C219BF88CD /* Pods_LoginDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B16971CB4594DCB30C1ED04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58754C0BE827C7270592D24F /* Pods-LoginDemo.debug.xcconfig */,
+				B6ABAF1ECD63396A944D8C97 /* Pods-LoginDemo.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,15 +185,22 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04000DA225B457CF0004AD0C /* Build configuration list for PBXNativeTarget "LoginDemo" */;
 			buildPhases = (
+				E3A86F0D2E3B7DC99DB67708 /* [CP] Check Pods Manifest.lock */,
 				04000D8725B457CA0004AD0C /* Sources */,
 				04000D8825B457CA0004AD0C /* Frameworks */,
 				04000D8925B457CA0004AD0C /* Resources */,
+				B29EDFFACFB08F8D8D785F4D /* [CP] Embed Pods Frameworks */,
+				E149AC526DFD40199E286364 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = LoginDemo;
+			packageProductDependencies = (
+				04000DA725B588CE0004AD0C /* FacebookLogin */,
+				04BEBB5925C7E52D0079B3E0 /* Alamofire */,
+			);
 			productName = LoginDemo;
 			productReference = 04000D8B25B457CA0004AD0C /* LoginDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +228,10 @@
 				Base,
 			);
 			mainGroup = 04000D8225B457CA0004AD0C;
+			packageReferences = (
+				04000DA625B588CE0004AD0C /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				04BEBB5825C7E52D0079B3E0 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 04000D8C25B457CA0004AD0C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,13 +246,74 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C7662725BB336B00FC56EC /* EmailSignInView.xib in Resources */,
 				04000D9E25B457CF0004AD0C /* LaunchScreen.storyboard in Resources */,
 				04000D9B25B457CF0004AD0C /* Assets.xcassets in Resources */,
 				04000D9625B457CA0004AD0C /* Main.storyboard in Resources */,
+				04000DBA25B95E6B0004AD0C /* Okta.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B29EDFFACFB08F8D8D785F4D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginDemo/Pods-LoginDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginDemo/Pods-LoginDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoginDemo/Pods-LoginDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E149AC526DFD40199E286364 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginDemo/Pods-LoginDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginDemo/Pods-LoginDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoginDemo/Pods-LoginDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3A86F0D2E3B7DC99DB67708 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoginDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04000D8725B457CA0004AD0C /* Sources */ = {
@@ -141,9 +321,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				04000D9925B457CA0004AD0C /* LoginDemo.xcdatamodeld in Sources */,
-				04000D9325B457CA0004AD0C /* ViewController.swift in Sources */,
+				04BEBB6B25CE39E90079B3E0 /* EditProfileTableViewCell.swift in Sources */,
 				04000D8F25B457CA0004AD0C /* AppDelegate.swift in Sources */,
+				04C7664C25C1B1FA00FC56EC /* userHeaderTableViewCell.swift in Sources */,
+				04C7662B25BB338800FC56EC /* EmailSignInView.swift in Sources */,
+				04BEBB3025C315A40079B3E0 /* UIViewController+Extensions.swift in Sources */,
+				04BEBB5D25C801D70079B3E0 /* Account.swift in Sources */,
+				04BEBB4F25C7CC650079B3E0 /* ImageController.swift in Sources */,
+				04C7664125C167BA00FC56EC /* LoginViewController.swift in Sources */,
+				04BEBB3825C7140D0079B3E0 /* AcountController.swift in Sources */,
+				04C7663925BEC21900FC56EC /* EmailSignUpViewController.swift in Sources */,
+				04BEBB4225C7C8630079B3E0 /* Enum.swift in Sources */,
+				04C7664F25C1B20A00FC56EC /* userInfoTableViewCell.swift in Sources */,
+				04BEBB6825CD40B90079B3E0 /* EditProfileTableViewController.swift in Sources */,
 				04000D9125B457CA0004AD0C /* SceneDelegate.swift in Sources */,
+				04C7664525C16FA600FC56EC /* ProfileTableViewController.swift in Sources */,
+				04C7662E25BC86CB00FC56EC /* EmailSignInSuperView.swift in Sources */,
+				04BEBB3F25C7C7900079B3E0 /* ResponseModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +481,7 @@
 		};
 		04000DA325B457CF0004AD0C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58754C0BE827C7270592D24F /* Pods-LoginDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -305,6 +500,7 @@
 		};
 		04000DA425B457CF0004AD0C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6ABAF1ECD63396A944D8C97 /* Pods-LoginDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -343,6 +539,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		04000DA625B588CE0004AD0C /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.2.0;
+			};
+		};
+		04BEBB5825C7E52D0079B3E0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04000DA725B588CE0004AD0C /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04000DA625B588CE0004AD0C /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+		04BEBB5925C7E52D0079B3E0 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04BEBB5825C7E52D0079B3E0 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		04000D9725B457CA0004AD0C /* LoginDemo.xcdatamodeld */ = {
