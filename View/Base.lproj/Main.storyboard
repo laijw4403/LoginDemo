@@ -12,7 +12,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="LoginDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="LoginDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -584,7 +584,7 @@
                                     <constraints>
                                         <constraint firstItem="bx9-bP-gIO" firstAttribute="leading" secondItem="aUp-ht-oT4" secondAttribute="leadingMargin" id="3Xc-Pg-waZ"/>
                                         <constraint firstItem="bx9-bP-gIO" firstAttribute="top" secondItem="aUp-ht-oT4" secondAttribute="topMargin" id="IRA-mf-w2z"/>
-                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="bx9-bP-gIO" secondAttribute="trailing" constant="157" id="dVb-a2-mHv"/>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="bx9-bP-gIO" secondAttribute="trailing" constant="20" id="dVb-a2-mHv"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="bx9-bP-gIO" secondAttribute="bottom" constant="0.5" id="eth-dj-UON"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -756,15 +756,16 @@
                             </tableViewSection>
                             <tableViewSection id="LeU-c5-5nM">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="GO3-Jg-ZK6">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="50" id="GO3-Jg-ZK6">
                                         <rect key="frame" x="0.0" y="450" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GO3-Jg-ZK6" id="1gi-oI-cjm">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log Out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDV-er-gBV">
-                                                    <rect key="frame" x="20" y="14.5" width="66.5" height="21"/>
+                                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDV-er-gBV">
+                                                    <rect key="frame" x="20" y="14.5" width="72.5" height="21"/>
+                                                    <gestureRecognizers/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                     <color key="textColor" systemColor="systemPinkColor"/>
                                                     <nil key="highlightedColor"/>

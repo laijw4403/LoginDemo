@@ -88,39 +88,6 @@ class LoginViewController: UIViewController {
         self.view.endEditing(true)
     }
     
-    //    func updateUI() {
-    //
-    //        let request = GraphRequest(graphPath: "me", parameters: ["fields":"id,email,name"])
-    //        request.start { (response, result, error) in
-    //            if let result = result as? [String:String] {
-    //                print("GraphRequest success")
-    //                print(result)
-    //            }
-    //        }
-    //
-    //        Profile.loadCurrentProfile { (profile, error) in
-    //            if let profile = profile {
-    //                print(profile.name)
-    //                print(profile.imageURL(forMode: .square, size: CGSize(width: 300, height: 300)))
-    //
-    //                self.profileNameLabel.text = profile.name
-    //
-    //                // 抓使用者照片
-    //                if let url = profile.imageURL(forMode: .square, size: CGSize(width: 300, height: 300)) {
-    //                    URLSession.shared.dataTask(with: url) { (data, response, error) in
-    //                        if let data = data,
-    //                           let image = UIImage(data: data) {
-    //                            DispatchQueue.main.async {
-    //                                self.profileImageView.image = image
-    //                            }
-    //                        }
-    //                    }.resume()
-    //                }
-    //
-    //            }
-    //        }
-    //    }
-    
     @IBAction func facebookLogIn(_ sender: UITapGestureRecognizer) {
         print("tap Continue with Facebook")
         let manager = LoginManager()
@@ -195,5 +162,6 @@ extension LoginViewController: UITextFieldDelegate {
         return true
     }
 }
+
 
 

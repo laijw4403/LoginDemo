@@ -60,6 +60,11 @@ struct UserInfo: Codable {
             return nil
         }
     }
+    
+    static func removeFile() {
+        let userDefault = UserDefaults.standard
+        userDefault.removeObject(forKey: "userInfo")
+    }
 }
 
 struct UpdateUser: Codable {

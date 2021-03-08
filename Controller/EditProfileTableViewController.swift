@@ -169,39 +169,85 @@ class EditProfileTableViewController: UITableViewController, UIImagePickerContro
     // MARK: Update Profile
     @IBAction func doneButtonPressed(_ sender: Any) {
         print("doneButton")
+        
         if let firstName = firstNameTextField.text,
            let lastName = lastNameTextField.text,
            let email = emailTextField.text,
            let birthdayDate = birthdayTextField.text,
            let url = imageUrl,
            let id = userinfo?.id,
-           let sessionToken = userinfo?.sessionToken{
-            profile = Profile(firstName: firstName, lastName: lastName, email: email, login: email, birthdayDate: birthdayDate, profileUrl: url)
-            guard let profile = profile else { return }
-            AccountController.shared.updateProfile(update: profile, for: id) { (result) in
-                switch result {
-                case .success(let profile):
-                    self.userinfo = UserInfo(sessionToken: sessionToken, id: id, profile: profile)
-                    guard let userImage = self.userImage else { return }
-                    // 儲存圖片
-                    ImageController.shared.storeImage(image: userImage, name: "userPhoto", compressionQuality: 1)
-                    // 儲存修改後的user profile
-                    UserInfo.saveToFile(userInfo: self.userinfo!)
-                    // 回到個人主頁
-                    DispatchQueue.main.async {
-                        self.navigationController?.popViewController(animated: true)
+           let sessionToken = userinfo?.sessionToken {
+            
+            // 檢查email格式
+            if self.validateEmail(email: email) {
+                // email格式符合
+                profile = Profile(firstName: firstName, lastName: lastName, email: email, login: email, birthdayDate: birthdayDate, profileUrl: url)
+                guard let profile = profile else { return }
+                AccountController.shared.updateProfile(update: profile, for: id) { (result) in
+                    switch result {
+                    case .success(let profile):
+                        self.userinfo = UserInfo(sessionToken: sessionToken, id: id, profile: profile)
+                        if let userImage = self.userImage {
+                            // 儲存圖片
+                            ImageController.shared.storeImage(image: userImage, name: "userPhoto", compressionQuality: 1)
+                        }
+                        
+                        // 儲存修改後的user profile
+                        UserInfo.saveToFile(userInfo: self.userinfo!)
+                        // 回到個人主頁
+                        DispatchQueue.main.async {
+                            self.navigationController?.popViewController(animated: true)
+                        }
+                        
+                    case .failure(let error):
+                        print("update account fail")
+                        print(error)
                     }
-                    
-                case .failure(let error):
-                    print("update account fail")
-                    print(error)
                 }
+            } else {
+                // email格式不符
+                showAleart(message: "Please enter a valid email address")
             }
+            
+          
         }
     }
     
+    // 驗證email
+    func validateEmail(email: String) -> Bool {
+        if email.count == 0 {
+            return false
+        }
+        let emailPattern = "^([a-z0-9]+(?:[._-][a-z0-9]+)*)@([a-z0-9]+(?:[.-][a-z0-9]+)*\\.[a-z]{2,3})$"
+        let emailRegular = try! NSRegularExpression(pattern: emailPattern, options: .caseInsensitive)
+        let result = emailRegular.matches(in: email, range: NSMakeRange(0, (email as NSString).length))
+        guard result.count > 0 else {
+            return false
+        }
+        return true
+    }
+    
+    // 登出
+    func signOut() {
+        print("tap signOut")
+        let controller = UIAlertController(title: "Sign out?", message: "", preferredStyle: .alert)
+        let signOutAction = UIAlertAction(title: "Sign out", style: .default) { (_) in
+            self.showLoginView()
+            UserInfo.removeFile()
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        controller.addAction(signOutAction)
+        controller.addAction(cancelAction)
+        present(controller, animated: true, completion: nil)
+    }
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.section, indexPath.row)
+        //print(indexPath.section, indexPath.row)
+        
+        // 點擊Sign Out呼叫signOut()
+        if indexPath.section == 2 && indexPath.row == 0 {
+            signOut()
+        }
         // 取消cell選取狀態
         tableView.deselectRow(
             at: indexPath, animated: true)

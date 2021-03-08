@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 extension UIViewController {
+    
     func showAleart(message: String) {
         print(message)
         let alertController = UIAlertController(title: "", message: message, preferredStyle: .alert)
@@ -22,6 +23,14 @@ extension UIViewController {
             let navController = UINavigationController(rootViewController: controller)
             navController.modalPresentationStyle = .fullScreen // 設定present樣式
             self.present(navController, animated: true, completion: nil)
+        }
+    }
+    
+    func showLoginView() {
+        print("showLoginView")
+        if let controller = self.storyboard?.instantiateViewController(identifier: "\(LoginViewController.self)") as? LoginViewController {
+            controller.modalPresentationStyle = .fullScreen
+            self.present(controller, animated: true, completion: nil)
         }
     }
 }
